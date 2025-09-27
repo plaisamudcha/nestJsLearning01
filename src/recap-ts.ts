@@ -3,6 +3,8 @@
 //   province: string;
 // };
 
+import { Controller, Query } from '@nestjs/common';
+
 // class Person {
 //   // field/property
 //   readonly name: string;
@@ -280,4 +282,20 @@ class AuthService {
 // class UserService {
 //   constructor(private userRepository: Repository<User>) {}
 //   findAll() {}
+// }
+
+// Decorator (function): Metadata Programming
+// A special kind of declaration that can be attached to a class, method, accessor, property, or parameter
+// Decorators use the form @expression, where expression must evaluate to a function that will be called at runtime with information about the decorated declaration
+// Commonly used in frameworks like Angular and NestJS for adding metadata to classes and methods
+
+// @Controller()
+// class A {
+//   // method decorator
+//   @isString()
+//   @IsEmail()
+//   email: string;
+
+//   @Post()
+//   register(@Query() query: any) {}
 // }
